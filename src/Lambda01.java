@@ -161,4 +161,5 @@ public class Lambda01 {
         sayi.stream().filter(t -> t % 2 == 0 || t > 34).forEach(Lambda01::yazdir);
     }
 
+
 }
