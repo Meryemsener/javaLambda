@@ -1,24 +1,30 @@
 public class Universite {
-    /*
+      /*
     TASK :
     fields --> Universite (String)
                bolum (String)
                ogrcSayisi (int)
                notOrt (int)
                olan POJO clas craete edip main method içinde 5 arklı obj'den List create ediniz.
+               pojo class: plan old java object --> model classı
+               private veriable
+               constructor
+               getter setter
+               toString
      */
-   private String universite;
-   private String bolum;
-   private int ogrcSayisi;
-   private int notOrt;
 
-    public Universite() {
+    private String  universite;
+    private String  bolum;
+    private int ogrSayisi;
+    private int notOrt;
+
+    public Universite(){
     }
 
-    public Universite(String universite, String bolum, int ogrcSayisi, int notOrt) {
+    public Universite(String universite, String bolum, int ogrSayisi, int notOrt) {
         this.universite = universite;
         this.bolum = bolum;
-        this.ogrcSayisi = ogrcSayisi;
+        this.ogrSayisi = ogrSayisi;
         this.notOrt = notOrt;
     }
 
@@ -38,12 +44,12 @@ public class Universite {
         this.bolum = bolum;
     }
 
-    public int getOgrcSayisi() {
-        return ogrcSayisi;
+    public int getOgrSayisi() {
+        return ogrSayisi;
     }
 
-    public void setOgrcSayisi(int ogrcSayisi) {
-        this.ogrcSayisi = ogrcSayisi;
+    public void setOgrSayisi(int ogrSayisi) {
+        this.ogrSayisi = ogrSayisi;
     }
 
     public int getNotOrt() {
@@ -56,11 +62,11 @@ public class Universite {
 
     @Override
     public String toString() {
-        return "Universite{" +
+        return
                 "universite='" + universite + '\'' +
-                ", bolum='" + bolum + '\'' +
-                ", ogrcSayisi=" + ogrcSayisi +
-                ", notOrt=" + notOrt +
-                '}';
+                        ", bolum='" + bolum + '\'' +
+                        ", ogrSayisi=" + ogrSayisi +
+                        ", notOrt=" + notOrt +
+                        "\n";
     }
 }
