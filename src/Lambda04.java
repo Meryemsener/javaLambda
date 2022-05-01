@@ -115,7 +115,7 @@ public class Lambda04 {
         return unv.
                 stream().
                 filter(t -> t.getNotOrt() > 63).
-                map(t -> t.getOgrSayisi()).
+                map(t -> t.getOgrSayisi()).//burdan itibaren mapToInt(t->t.getOgrenciSayisi()).sum();
                 // reduce(Integer::sum);
                 // reduce(Math::addExact);
                         reduce(0, (t, u) -> t + u);
