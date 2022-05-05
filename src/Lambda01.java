@@ -159,6 +159,7 @@ public class Lambda01 {
     //34'Ten buyuk veya cift
     public static void printElOtuzdorttenBuyukVeyaCift(List<Integer> sayi) {
         sayi.stream().filter(t -> t % 2 == 0 || t > 34).forEach(Lambda01::yazdir);
+
     }
 
 
