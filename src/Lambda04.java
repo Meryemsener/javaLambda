@@ -75,7 +75,9 @@ public class Lambda04 {
     public static List<Universite> ogrSayiBkSirala(List<Universite> unv) {
         return unv.
                 stream().
-                sorted(Comparator.comparing(Universite::getOgrSayisi).reversed()).
+
+                sorted(Comparator.comparing(Universite::getOgrSayisi).
+                        reversed()).
                 collect(Collectors.toList());
     }
 
