@@ -153,7 +153,8 @@ public class C1_IntList_StreamOrnekleri {
     // S16:  listenin ilk 5 elemanini topla?
 
     public static void ilkBesElemaniTopla(List<Integer> list){
-        System.out.println(list.stream().limit(5).reduce(Integer::sum).orElseThrow());
+        System.out.println(list.stream().limit(5).reduce(Math::addExact));
+        // System.out.println(list.stream().limit(5).reduce(Integer::sum).orElseThrow());
 
     }
 
@@ -161,7 +162,10 @@ public class C1_IntList_StreamOrnekleri {
     //S17: listenin son bes elemaninin  listele
 
     public static void sonBesElemaniTopla(List<Integer> list){
-        list.stream().skip(list.size()-5).forEach(t-> System.out.print(t+" "));
+        list.
+                stream().
+                skip(list.size()-5).
+                forEach(t-> System.out.print(t+" "));
 
     }
 
